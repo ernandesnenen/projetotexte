@@ -1,8 +1,65 @@
 header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: rgb(37, 216, 216);
-    padding: 2rem 1rem;
-    margin: 0;
+    padding: 1em;
+    height: 100px;
+    color: #f8f8f8;
+   
 }
- h1{
-     font-size: 2em;
- }
+
+
+.header_1{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  
+}
+.face_cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #f8f8f8;
+    transition: 2s;
+    
+}
+.face_cont:hover{   
+    color: #000;  
+   
+}
+#insta{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #f8f8f8;
+    transition: 2s;     
+}
+#insta p{
+    margin-left: 5px;    
+    font-weight: normal;    
+}
+
+#insta:hover{   
+    color: #000;  
+   
+}
+
+.face_cont p{
+    margin-left: 5px;
+    font-weight: normal;
+    margin-right: 5px;
+    
+}
+
+@media screen and (min-width: 500px){
+
+.header_1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+    
+}
+

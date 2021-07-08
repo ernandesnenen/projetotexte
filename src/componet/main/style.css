@@ -1,10 +1,32 @@
 main{
-    background-image: url('../../img/bg_nenen.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    /* background-image: url('../../img/bg-02.svg');
+    background-size:contain;
+    background-position: bottom  ;
+    background-repeat: no-repeat; */
+   
+    margin: 0; 
+    padding: 0;
+  
+  
 }
 
 h1{
     margin: 0;
+    padding-top: 1em;
 }
+
+
+/* -------------------------------------------------- */
+/* @media(min-width: 600px){
+main{   
+  
+    display: grid;
+    grid-template-columns:  repeat(2, 1fr);
+    grid-template-rows: 1fr
+    
+}
+
+} */
