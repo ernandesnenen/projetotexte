@@ -1,65 +1,81 @@
 header{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgb(37, 216, 216);
-    padding: 1em;
-    height: 100px;
+    flex: 1;
+    flex-direction: column;
+    background-image: url("../../img/bga.jpg");   
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(38, 230, 255, 0.8);
+    background-blend-mode: overlay;    
     color: #f8f8f8;
-   
+   height: 100%;
+   width: 100%;
+   padding: 2em;
 }
+h1{
 
-
-.header_1{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-  
-}
-.face_cont{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: #f8f8f8;
-    transition: 2s;
+    font-size: 8vw;
+    margin-bottom: 50px;
+    color: #000000;
+    position: relative;
+    font-family: 'Fredoka One', cursive;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 4px rgb(255, 255, 255);
+    
     
 }
-.face_cont:hover{   
-    color: #000;  
-   
-}
-#insta{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: #f8f8f8;
-    transition: 2s;     
-}
-#insta p{
-    margin-left: 5px;    
-    font-weight: normal;    
+span{
+    color:  #ff5e01;
+    font-style: italic;
+    font-size: 7vw;
+    position: absolute;
+    top: 65%;
+    left: 45%;
+    text-transform: lowercase;
+    letter-spacing: 0;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: 1px 2px 6px white;
 }
 
-#insta:hover{   
-    color: #000;  
-   
-}
-
-.face_cont p{
-    margin-left: 5px;
-    font-weight: normal;
-    margin-right: 5px;
+p{
+    color: rgb(3, 48, 51);
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 1px 1px 4px rgb(38, 230, 250);
+    font-size: 5vw;
     
-}
-
-@media screen and (min-width: 500px){
-
-.header_1{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    
+   
    
 }
+
+@media(min-width: 650px){
+    header{
+       
+      
+       height: 100%;
+       width: 50%;
+     
+    }
+    h1{
+                font-size: 3vw; 
+
+        
+    }
+    span{
+      
+        font-size: 2.5vw;       
+        top: 65%;
+        left: 45%;     
+    }
     
+    p{      
+        font-size: 1.6vw;
+
+    }    
+
+
 }
+
 

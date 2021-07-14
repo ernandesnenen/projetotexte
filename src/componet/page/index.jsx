@@ -1,9 +1,8 @@
-import { Footer } from "../footer"
+
 import { Header } from "../header"
 import { Main } from "../main"
 
-import produto from '../../img/virkon500.png'
-import { FaFacebook, FaInstagram, FaMapMarkerAlt } from "react-icons/fa" ; 
+
 import {api} from '../../service/api'
 import { useRef, useState }from 'react'
 import {telefoneMask} from '../../mask'
@@ -86,32 +85,19 @@ async function register(e){
    return(
     <>
     <Header> 
-       <p>Terraviva</p>
-       <div className="header_1">
-          <div  className='face_cont'>
-            <FaFacebook />
-            <p>Facebook</p>
-          </div>
-          <div id='insta'>
-            <FaInstagram />
-            <p>Instagram</p>
-          </div>
+       <div>
+
+      <h1>Virkon S 500g <span>Quem ama protege</span></h1>
        </div>
+       <div>
+         <p>elimina fungos, bactérias e vírus, proporcionado
+          um ambiente protegido para o desenvolvimento saudável de seu pet.</p> 
+       </div>
+      
     </Header>
     <Main>
-       <section className="sec1">
-         
-            <div className="sec_cont">
-               <h1><strong>Virkon S</strong> 500g</h1>
-               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus facere est exercitationem sequi aliquam adipisci fuga corrupti explicabo? </p>
-            </div>
-            <div className="sec_img">
-                     <img src={produto} alt="produto virkon"/>
-            </div>        
-       </section>
-            
-       <section className="sec2">
+           
+       <section className="sect">
           <form  >
             <h2>Contato</h2>
              {myError &&
@@ -150,7 +136,7 @@ async function register(e){
             </div>
             <div>
               
-             <a ref={lin} onClick={register} href="https://api.whatsapp.com/send?1=pt_BR&amp;phone=5585997157520">Enviar</a> 
+             <a ref={lin} onClick={register} href="https://api.whatsapp.com/send?1=pt_BR&amp;phone=5585997157520">Comprar</a> 
             </div>                 
                  
          </form>  
@@ -158,12 +144,6 @@ async function register(e){
       
        </section>
    </Main>
-   {/* ----------------------------footer------------------------------------------------------- */}
-    <Footer>
-      <div>
-         <FaMapMarkerAlt />
-         <p>Fortaleza - CE</p>
-       </div>
-    </Footer>
+
     </>)
     }
