@@ -7,6 +7,7 @@ import {api} from '../../service/api'
 import { useRef, useState }from 'react'
 import {telefoneMask} from '../../mask'
 import './home.css'
+import produto from '../../img/virkon500.png';
 
 
 
@@ -89,9 +90,10 @@ async function register(e){
 
       <h1>Virkon S 500g <span>Quem ama protege</span></h1>
        </div>
-       <div>
+       <div id='conteudo_com_img'>
+         <img src={produto} alt="produto virkon" />  
          <p>elimina fungos, bactérias e vírus, proporcionado
-          um ambiente protegido para o desenvolvimento saudável de seu pet.</p> 
+          um ambiente protegido para o desenvolvimento saudável.</p> 
        </div>
       
     </Header>

@@ -43,12 +43,24 @@ p{
     margin-top: 10px;
     font-family: 'Roboto', sans-serif;
     text-shadow: 1px 1px 4px rgb(38, 230, 250);
-    font-size: 5vw;
-    
-    
+    font-size: 5vw;  
    
    
 }
+img{
+   
+    width: 30%;
+    height: 75%;
+}
+#conteudo_com_img{
+    display: flex;    
+    justify-content: space-between;
+    align-items: top;
+    margin: 0;
+    padding: 0;
+
+}
+
 
 @media(min-width: 650px){
     header{
@@ -73,7 +85,10 @@ p{
     p{      
         font-size: 1.6vw;
 
-    }    
+    }  
+    #conteudo_com_img{       
+        align-items: top;       
+    }  
 
 
 }
