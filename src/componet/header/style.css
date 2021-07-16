@@ -2,10 +2,10 @@ header{
     display: flex;
     flex: 1;
     flex-direction: column;
-    background-image: url("../../img/bga.jpg");   
+    background: url("../../img/bga.jpg"), rgba(38, 230, 255, 0.9);   
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: rgba(38, 230, 255, 0.8);
+  
     background-blend-mode: overlay;    
     color: #f8f8f8;
    height: 100%;
@@ -43,14 +43,14 @@ p{
     margin-top: 10px;
     font-family: 'Roboto', sans-serif;
     text-shadow: 1px 1px 4px rgb(38, 230, 250);
-    font-size: 5vw;  
+    font-size: 3.5vw;  
    
    
 }
 img{
    
-    width: 30%;
-    height: 75%;
+    width: 25%;
+    height: 65%;
 }
 #conteudo_com_img{
     display: flex;    
